@@ -1,0 +1,77 @@
+Technical Report
+
+Forecasting U.S. Retail Sales Using ARIMA
+Author: Damar Shipp Jr.
+Role: Financial Analyst | Data Scientist | U.S. Army Veteran
+
+Executive Summary
+This report presents a time series forecasting model built on U.S. monthly retail sales data from 2010 to 2024. The project leverages ARIMA to forecast the next 24 months of sales with the goal of providing forward-looking insight for financial planning and strategic decisions. Key deliverables include trend analysis, seasonal decomposition, model evaluation, and forecast visualization.
+
+Dataset Overview
+Source: Federal Reserve Economic Data (FRED)
+Series ID: RSXFS (Retail & Food Services Sales, Seasonally Adjusted)
+Frequency: Monthly
+Time Range: January 2014 – December 2024
+Units: Millions USD
+
+Methodology
+1. Exploratory Data Analysis (EDA):
+Plotted raw sales data with 3- and 6-month rolling averages
+Performed additive seasonal decomposition
+Assessed month-to-month changes
+
+2. Stationarity Testing:
+Conducted Augmented Dickey-Fuller (ADF) test
+Differenced data once (d=1) to achieve stationarity
+
+3. Modeling with ARIMA:
+Used auto_arima() to select optimal parameters via AIC
+Tuned across (p, d, q) values in the range (0–3)
+Suppressed overfitting using stepwise search and error handling
+
+4. Forecasting:
+Forecasted 24 months into the future
+Generated 95% confidence intervals
+Used dynamic DatetimeIndex for forecasting range
+
+5. Evaluation:
+Analyzed residual patterns (mean-zero, no autocorrelation)
+Calculated in-sample RMSE
+Reviewed AIC value for model simplicity vs fit
+
+Visuals
+1. Forecast with Confidence Intervals
+Displays actuals and predicted sales
+Orange shaded area shows the 95% CI range
+
+2. Seasonal Decomposition
+Observed mixed seasons
+COVID-era data showed suppressed holiday demand
+Highlighted the limits of assumption-based forecasting
+
+Key Metrics
+Metric	Value (Example)
+AIC	~2750
+In-sample RMSE	~35190
+Model Type	ARIMA(1,1,1)
+Forecast Horizon	24 Months
+
+Key Takeaways
+Retail sales trend steadily upward with some seasonal behavior
+Q4 “holiday spikes” are inconsistent — disrupted by economic shocks
+External volatility (e.g., COVID-19, inflation) altered consumer trends
+ARIMA modeling captured macro patterns and forecasted within stable bounds
+Financial forecasting must be flexible and data-led — not assumption-based
+
+Future Work
+Apply SARIMA or Facebook Prophet for improved seasonality modeling
+Integrate inflation or unemployment data as multivariate inputs
+Implement walk-forward or rolling validation
+Deploy interactive dashboard via Streamlit or Tableau
+
+About the Me
+Damar Shipp Jr.
+Orlando, FL
+Financial Analyst | Data Scientist | U.S. Army Veteran
+https://www.linkedin.com/in/damar-shipp-jr
+https://github.com/DamarTheMunginizer
