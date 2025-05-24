@@ -9,7 +9,7 @@
 This project uses ARIMA time series modeling to forecast U.S. monthly retail sales based on historical data from the Federal Reserve (FRED). Retail sales are a key macroeconomic KPI used to understand consumer demand, guide corporate planning, and influence investment strategy.
 
 My objective was to:
-- Analyze and model retail sales data from 2014–2024(Last Decade)
+- Analyze and model retail sales data from 2014–2024 (Last Decade)
 - Forecast the next 24 months of consumer activity
 - Identify seasonal trends and macro patterns
 - Communicate actionable insights for financial planning
@@ -101,7 +101,6 @@ The final ARIMA model forecasted 24 months of retail sales, capturing Q4 seasona
 Orlando, FL  
 Aspiring Financial Analyst | Data Scientist | U.S. Army Veteran  
 [LinkedIn](https://www.linkedin.com/in/damar-shipp-jr)  
-[GitHub](https://github.com/DamarTheMunginizer)
 
 ---
 
