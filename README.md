@@ -100,7 +100,8 @@ The final ARIMA model forecasted 24 months of retail sales, capturing Q4 seasona
 **Damar Shipp Jr.**  
 Orlando, FL  
 Aspiring Financial Analyst | Data Scientist | U.S. Army Veteran  
-[LinkedIn](https://www.linkedin.com/in/damar-shipp-jr)  
+(https://www.linkedin.com/in/damar-shipp-jr)  
+
 
 ---
 
